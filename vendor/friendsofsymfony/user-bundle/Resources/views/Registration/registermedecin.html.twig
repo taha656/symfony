@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/site_tennis/preview/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Feb 2016 11:10:41 GMT -->
+<head>
+    <title>WT TENNIS</title>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+
+<meta name="author" content="corsini" />
+<meta name="keywords" content="Tennis, club, events, football, golf, non-profit, betting assistant, football,fitness, tennis, sport, soccer, goal, sports, volleyball, basketball,	charity, club, cricket, football, hockey, magazine, non profit, rugby, soccer, sport, sports, tennis" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link href="{{asset('inscription/css/bootstrap.css')}}" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,300,200,500,600,700,800,900' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/fonts/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="{{asset('inscription/css/animate.css')}}" rel="stylesheet" type="text/css" />
+
+    <link href="{{asset('inscription/css/jquery.bxslider.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('inscription/css/jquery.jscrollpane.css')}}" rel="stylesheet" type="text/css" />
+    
+    <link href="{{asset('inscription/css/component.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset('inscription/css/style_dir.css')}}" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
+    <link href="{{asset('inscription/css/responsive.css')}}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<section class="container box-logo">
+   
+ </section>
+    <section class="drawer">
+				
+     
+   
+           <!-- REGISTER BOX -->
+           <div class="top-score-title right-score col-md-12">
+            <h3>Inscrivez <span>Vous</span><span class="point-int"> !</span></h3>
+                <div class="col-md-12 login-page">
+                          {{ form_start(form, {'method': 'post', 'attr': {'class': 'register-form'}}) }}
+
+                       
+                       
+        <tr>        <div class="name">
+                <td> <label for="name">Nom:</label><div class="clear"></div></td>
+                            
+                            <td> {{form_widget(form.nom)}}</td>
+            </div> </tr>
+                        <div class="email">
+                            <label for="email">Email:</label><div class="clear"></div>
+                         
+                            {{form_widget(form.email)}}
+
+                       
+                       </div>
+                        <div class="name">
+                            <label for="username">Username:</label><div class="clear"></div>
+  
+                         {{form_widget(form.username)}}
+                        </div>
+                        <div class="name">
+                            <label for="age">Age:</label><div class="clear"></div>
+                         {{form_widget(form.age)}}
+
+                        </div>
+                              <div class="name">
+                            <label for="cin">Cin:</label><div class="clear"></div>
+                         {{form_widget(form.cin)}}
+
+                        </div>
+                        <div class="name">
+                            <label for="password">Password:</label><div class="clear"></div>
+                       {{form_widget(form.plainPassword)}}
+                        </div>
+                         <div class="name">
+                            <label for="specialitemedecin">Specialite medecin:</label><div class="clear"></div>
+                       {{form_widget(form.specialitemedecin)}}
+                        </div>
+                        <div id="register-submit">
+                          <input type="submit" value="{{ 'registration.submit'|trans }}" />
+                        </div>
+                        {{ form_end(form) }}
+
+                        <div class="ctn-img">
+                            <img src="{{asset('inscription/images/federer.png')}}" />
+                       </div><!--Close Images-->
+                       <div class="clear"></div>
+                
+       
+         
+                                      
+</div>
+
+           </div><!--Close REgistration-->
+          </div>
+        </section>
+      
+<script src="{{asset('js/jquery-1.10.2.js')}}" type="text/javascript"></script>
+<script src="{{asset('js/jquery-migrate-1.2.1.min.js')}}" type="text/javascript"></script>
+<!--MENU-->
+<script src="{{asset('js/menu/modernizr.custom.js')}}" type="text/javascript"></script>
+<script src="{{asset('js/menu/cbpHorizontalMenu.js')}}" type="text/javascript"></script>
+<!--END MENU-->
+
+<!-- Button Anchor Top-->
+<script src="{{asset('js/jquery.ui.totop.js')}}" type="text/javascript"></script>
+<script src="{{asset('js/custom.js')}}" type="text/javascript"></script> 
+
+</body>
+
+<!-- Mirrored from www.ilcorsaronero.it/progettienvato/SiteParallax/ParallaxSite/site_tennis/preview/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 03 Feb 2016 11:10:42 GMT -->
+</html>

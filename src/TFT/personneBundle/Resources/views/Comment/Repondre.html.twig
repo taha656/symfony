@@ -1,0 +1,37 @@
+
+<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" />
+<link href=""{{asset('css/fonts/font-awesome-4.1.0/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
+
+<link href="{{asset('css/component.css')}}" rel="stylesheet" type="text/css" />
+
+<link href="{{asset('css/style_dir.css" rel="stylesheet')}}" type="text/css" />
+<link href="{{asset('css/responsive.css')}}" rel="stylesheet" type="text/css" />
+<link href="{{asset('css/costum.css')}}" rel="stylesheet" type="text/css" />
+<br>
+<br>
+<br>
+<br>
+    <center>
+     <form>
+         <div class="col-sm-offset-4 col-sm-4">
+    <table border ="0" >
+
+{% for m in mds %}
+    
+
+       <li class="list-group-item text-right"><span class="pull-left"><strong class="">Sujet :  </strong></span> <span class="">{{ m.titreduforum }}</span></li>
+ <li class="list-group-item text-right"><span class="pull-left"><strong class="">Description : </strong></span> <span class="">{{ m.Description }}</span></li>       
+  
+        
+        {% endfor %}
+
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+{% include 'FOSCommentBundle:Thread:async.html.twig' with {'id': 'foo'} %}
+
+
+         </div>
+</table>
+            </center>
+

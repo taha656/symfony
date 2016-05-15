@@ -1,0 +1,16 @@
+{# empty Twig template #}
+{# total items count #}
+
+{# table body #}
+{% for match in pagination %}
+<tr {% if loop.index is odd %}class="color"{% endif %}>
+    <td>{{ match.id }}</td>
+        <td>{{ match.types }}</td>
+
+</tr>
+{% endfor %}
+</table>
+{# display navigation #}
+<div class="navigation">
+    {{ knp_pagination_render(pagination) }}
+</div>

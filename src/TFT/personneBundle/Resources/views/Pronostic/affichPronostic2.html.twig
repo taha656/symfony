@@ -1,0 +1,110 @@
+{# empty Twig template #}
+{# empty Twig template #}
+ {% extends 'TFTpersonneBundle::pronosticUser.html.twig' %}
+ 
+{% block content2 %}
+
+
+
+{{ form(Form)}}
+
+    <form method="POST">
+
+
+            
+                     
+       
+        
+                           <div class="col-md-1 acc-title"> Cat </div>
+                          
+        
+        
+                           <div class="col-md-1 acc-title"> match : </div>
+                           </td>
+        
+                            <div class="col-md-2 acc-title">Joueur 1</div>
+        
+        
+                            <div class="col-md-3 acc-title">Joueur 2</div>
+                            
+                            </td>
+       
+                            <div class="col-md-2 acc-title">Choix</div>
+       </div>
+          {% set var = 1 %}
+                {% for m in mds%} 
+               
+                  
+                            <div class="col-md-1 timg"><img src="{{asset('images/atp_img.png')}}" alt="" /></div>
+                            <div class="col-md-2 t1">       
+              {{m.idmatches1.id}} 
+             
+</div>
+                            <div class="col-md-3 t2"><p>            
+              {{m.idmatches1.idjoueur1.nom}} 
+            
+ </div>
+                            <div class="col-md-2 t3">            
+              {{m.idmatches1.idjoueur2.nom}} 
+            
+</div>
+                            <div class="col-md-2 t4">         
+            <INPUT type="checkbox" name="choix{{var}}" value="1"> 1
+
+<INPUT type="checkbox" name="choix{{var}}" value="2"> 2
+            </td></div>{#
+                              <div class="col-md-2 t4">         
+            <INPUT type="checkbox" name="choix2" value="1"> 1
+
+<INPUT type="checkbox" name="choix2" value="2"> 2
+            </td></div>
+                              <div class="col-md-2 t4">         
+            <INPUT type="checkbox" name="choix3" value="1"> 1
+
+<INPUT type="checkbox" name="choix3" value="2"> 2
+            </td></div>
+                              <div class="col-md-2 t4">         
+            <INPUT type="checkbox" name="choix4" value="1"> 1
+
+<INPUT type="checkbox" name="choix4" value="2"> 2
+            </td></div>
+                              <div class="col-md-2 t4">         
+            <INPUT type="checkbox" name="choix5" value="1"> 1
+
+<INPUT type="checkbox" name="choix5" value="2"> 2
+            </td></div>
+                              <div class="col-md-2 t4">         
+            <INPUT type="checkbox" name="choix6" value="1"> 1
+
+<INPUT type="checkbox" name="choix" value="2"> 2
+            </td></div>
+                              <div class="col-md-2 t4">         
+            <INPUT type="checkbox" name="choix6" value="1"> 1
+
+<INPUT type="checkbox" name="choix7" value="2"> 2
+            </td></div>
+                              <div class="col-md-2 t4">         
+            <INPUT type="checkbox" name="choix8" value="1"> 1
+
+<INPUT type="checkbox" name="choix" value="8"> 2
+            </td></div>
+                              <div class="col-md-2 t4">         
+            <INPUT type="checkbox" name="choix9" value="1"> 1
+
+<INPUT type="checkbox" name="choix9" value="2"> 2
+            </td></div>
+                              <div class="col-md-2 t4">         
+            <INPUT type="checkbox" name="choix10" value="1"> 1
+
+<INPUT type="checkbox" name="choix10" value="2"> 2 #}
+            </td></div>
+                            
+                            <div class="acc-footer"></div>
+
+                         {% set var=var+1 %}   
+                    
+                 {% endfor %} 
+                 <input type="submit" value=ajouter"></form>
+                 
+
+   {% endblock %} 

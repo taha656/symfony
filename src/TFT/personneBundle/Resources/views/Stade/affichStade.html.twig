@@ -1,0 +1,66 @@
+{# empty Twig template #}
+{% extends 'TFTpersonneBundle::adminIndex.html.twig' %}
+{% block content2 %}
+    <li class="icn_categories"><a {% for m in mds%} href="{{path('rechercher_admin_stade',{'nom' :  m.nom  })}}" {% endfor %}>
+                                search Stadium</a></li>
+    <center>
+  <table border="2">
+    <tr>
+        <td>
+           ID 
+        </td>
+        <td>
+           nom 
+        </td>
+         <td>
+           capacite 
+        </td>
+         <td>
+           typeDeTerrain 
+        </td>
+         <td>
+           surface 
+        </td>
+        <td>
+           supprimer 
+        </td>
+        <td>
+           modifier 
+        </td>
+    </tr>  
+    {% for m in mds%}
+        <tr>
+            <td>
+               {{m.id}} 
+            </td> 
+            <td>
+               {{m.nom}}  
+            </td>
+            <td>
+               {{m.capacite}}  
+            </td>
+            <td>
+               {{m.typeDeTerrain}}  
+            </td>
+            <td>
+               {{m.surface}}  
+            </td>
+            <td>
+              <a href="{{path('supprimer_admin_stade',{'id' : m.id})}}"
+                  >supprimer</a>
+            </td>
+             <td>
+               <a href="{{path('modifier_admin_stade',{'id' : m.id})}}"
+                  >modifier</a>
+            </td>
+            
+        </tr>
+       {% endfor %}
+       <a href="{{path('rediriger_admin_stade')}}"
+                  >export</a>
+      
+</table>
+</center> 
+
+
+  {% endblock %} 

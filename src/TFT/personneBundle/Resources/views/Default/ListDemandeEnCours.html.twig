@@ -1,0 +1,38 @@
+{# empty Twig template #}
+  <h2> Liste des utilisateurs : </h2>
+      
+ 
+    
+             {% for j in m %}
+               
+        <fieldset>
+             <legend>Condidat CIN {{j.cin}}</legend>
+   <table border ="0" >
+           
+        <tr>
+             <td>Nom    </td>
+            <td>
+        {{j.nom}}
+            </td>
+        </tr>
+        <tr>
+           <td>Email    </td>
+
+            <td>
+        {{ j.email }}
+            </td>
+        </tr>
+       
+          <tr>
+ 
+             <td><a href="{{path('Accepter',{'id':j.cin})}}"> Accepter </a></td>
+             
+             <td><a href="{{path('Refuser',{'id':j.cin})}}">Refuser </a></td>
+         </tr>
+        </table>
+           
+                
+          
+        {% endfor %}
+   
+ </fieldset>

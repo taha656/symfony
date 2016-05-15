@@ -1,0 +1,452 @@
+{# empty Twig template #}
+qqqqq
+
+    <center>
+      <form method="POST">   
+ 
+
+      
+       {% set var = 1 %}
+           {% for m in mds%} 
+               <table border="1">
+                   <tr>
+        <td>
+           id jeu : 
+        </td>
+        <td>
+          id utilisateur
+        </td>
+        <td>
+          prix
+        </td>
+        <td>
+           choix 
+        
+           </td>
+            <td>
+           resultat 
+        
+           </td>
+      
+      
+    </tr>  
+               <tr>
+            <td>
+              {{ m.idjeu ? m.idjeu.idmatches1.idjoueur1.nom}} 
+                 vs
+                 {{ m.idjeu ? m.idjeu.idmatches1.idjoueur2.nom}} 
+                 
+            </td> 
+            <td>
+            {#  {{m.idutilisateur.nom}} #}
+            </td> 
+            <td>
+              {{m.prix}} 
+            </td>
+             <td>
+                 {% if var is sameas(1) %}
+              {{ m.choix1 }}
+{% endif %}
+     {% if var is sameas(2) %}
+              {{ m.choix2 }}
+{% endif %}
+            </td>
+            <td>
+               {% if m.idjeu ? m.idjeu.idmatches1.resultat is sameas("") %} En Attente
+                   {% endif %}
+                {% if m.idjeu ? m.idjeu.idmatches1.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (1)%}
+                    gagné
+                   {% endif %}
+                  {% if m.idjeu ? m.idjeu.idmatches1.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (2)%} a gagné
+                      
+                   {% endif %}
+                   {% if m.idjeu ? m.idjeu.idmatches1.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (2)%} a perdu
+ {% endif %} 
+                       {% if m.idjeu ? m.idjeu.idmatches1.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (1)%} a perdu
+                   {% endif %}                   
+                   
+             {# {{m.idjeu.idmatches.resultat}} #}
+            </td>
+               <br><br>
+          </tr>
+          
+          
+            <tr>
+            <td>
+              {{ m.idjeu ? m.idjeu.idmatches2.idjoueur1.nom}} 
+                 vs
+                 {{ m.idjeu ? m.idjeu.idmatches2.idjoueur2.nom}} 
+                 
+            </td> 
+            <td>
+            {#  {{m.idutilisateur.nom}} #}
+            </td> 
+            <td>
+              {{m.prix}} 
+            </td>
+             <td>
+                 {% if var is sameas(1) %}
+              {{ m.choix1 }}
+{% endif %}
+     {% if var is sameas(2) %}
+              {{ m.choix2 }}
+{% endif %}
+            </td>
+            <td>
+               {% if m.idjeu ? m.idjeu.idmatches2.resultat is sameas("") %} En Attente
+                   {% endif %}
+                {% if m.idjeu ? m.idjeu.idmatches2.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (1)%}
+                    gagné
+                   {% endif %}
+                  {% if m.idjeu ? m.idjeu.idmatches2.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (2)%} a gagné
+                      
+                   {% endif %}
+                   {% if m.idjeu ? m.idjeu.idmatches2.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (2)%} a perdu
+ {% endif %} 
+                       {% if m.idjeu ? m.idjeu.idmatches2.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (1)%} a perdu
+                   {% endif %}                   
+                   
+             {# {{m.idjeu.idmatches.resultat}} #}
+            </td>
+               <br>
+          </tr>
+          
+          
+            <tr>
+            <td>
+              {{ m.idjeu ? m.idjeu.idmatches3.idjoueur1.nom}} 
+                 vs
+                 {{ m.idjeu ? m.idjeu.idmatches3.idjoueur2.nom}} 
+                 
+            </td> 
+            <td>
+            {#  {{m.idutilisateur.nom}} #}
+            </td> 
+            <td>
+              {{m.prix}} 
+            </td>
+             <td>
+                 {% if var is sameas(1) %}
+              {{ m.choix1 }}
+{% endif %}
+     {% if var is sameas(2) %}
+              {{ m.choix2 }}
+{% endif %}
+            </td>
+            <td>
+               {% if m.idjeu ? m.idjeu.idmatches3.resultat is sameas("") %} En Attente
+                   {% endif %}
+                {% if m.idjeu ? m.idjeu.idmatches3.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (1)%}
+                    gagné
+                   {% endif %}
+                  {% if m.idjeu ? m.idjeu.idmatches3.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (2)%} a gagné
+                      
+                   {% endif %}
+                   {% if m.idjeu ? m.idjeu.idmatches3.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (2)%} a perdu
+ {% endif %} 
+                       {% if m.idjeu ? m.idjeu.idmatches3.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (1)%} a perdu
+                   {% endif %}                   
+                   
+             {# {{m.idjeu.idmatches.resultat}} #}
+            </td>
+               <br><br>
+          </tr>
+          
+          
+            <tr>
+            <td>
+              {{ m.idjeu ? m.idjeu.idmatches4.idjoueur1.nom}} 
+                 vs
+                 {{ m.idjeu ? m.idjeu.idmatches4.idjoueur2.nom}} 
+                 
+            </td> 
+            <td>
+            {#  {{m.idutilisateur.nom}} #}
+            </td> 
+            <td>
+              {{m.prix}} 
+            </td>
+             <td>
+                 {% if var is sameas(1) %}
+              {{ m.choix1 }}
+{% endif %}
+     {% if var is sameas(2) %}
+              {{ m.choix2 }}
+{% endif %}
+            </td>
+            <td>
+               {% if m.idjeu ? m.idjeu.idmatches4.resultat is sameas("") %} En Attente
+                   {% endif %}
+                {% if m.idjeu ? m.idjeu.idmatches4.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (1)%}
+                    gagné
+                   {% endif %}
+                  {% if m.idjeu ? m.idjeu.idmatches4.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (2)%} a gagné
+                      
+                   {% endif %}
+                   {% if m.idjeu ? m.idjeu.idmatches4.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (2)%} a perdu
+ {% endif %} 
+                       {% if m.idjeu ? m.idjeu.idmatches4.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (1)%} a perdu
+                   {% endif %}                   
+                   
+             {# {{m.idjeu.idmatches.resultat}} #}
+            </td>
+               <br>
+          </tr>
+          
+            <tr>
+            <td>
+              {{ m.idjeu ? m.idjeu.idmatches5.idjoueur1.nom}} 
+                 vs
+                 {{ m.idjeu ? m.idjeu.idmatches5.idjoueur2.nom}} 
+                 
+            </td> 
+            <td>
+            {#  {{m.idutilisateur.nom}} #}
+            </td> 
+            <td>
+              {{m.prix}} 
+            </td>
+             <td>
+                 {% if var is sameas(1) %}
+              {{ m.choix1 }}
+{% endif %}
+     {% if var is sameas(2) %}
+              {{ m.choix2 }}
+{% endif %}
+            </td>
+            <td>
+               {% if m.idjeu ? m.idjeu.idmatches5.resultat is sameas("") %} En Attente
+                   {% endif %}
+                {% if m.idjeu ? m.idjeu.idmatches5.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (1)%}
+                    gagné
+                   {% endif %}
+                  {% if m.idjeu ? m.idjeu.idmatches5.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (2)%} a gagné
+                      
+                   {% endif %}
+                   {% if m.idjeu ? m.idjeu.idmatches5.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (2)%} a perdu
+ {% endif %} 
+                       {% if m.idjeu ? m.idjeu.idmatches5.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (1)%} a perdu
+                   {% endif %}                   
+                   
+             {# {{m.idjeu.idmatches.resultat}} #}
+            </td>
+               <br><br>
+          </tr>
+          
+            <tr>
+            <td>
+              {{ m.idjeu ? m.idjeu.idmatches6.idjoueur1.nom}} 
+                 vs
+                 {{ m.idjeu ? m.idjeu.idmatches6.idjoueur2.nom}} 
+                 
+            </td> 
+            <td>
+            {#  {{m.idutilisateur.nom}} #}
+            </td> 
+            <td>
+              {{m.prix}} 
+            </td>
+             <td>
+                 {% if var is sameas(1) %}
+              {{ m.choix1 }}
+{% endif %}
+     {% if var is sameas(2) %}
+              {{ m.choix2 }}
+{% endif %}
+            </td>
+            <td>
+               {% if m.idjeu ? m.idjeu.idmatches6.resultat is sameas("") %} En Attente
+                   {% endif %}
+                {% if m.idjeu ? m.idjeu.idmatches6.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (1)%}
+                    gagné
+                   {% endif %}
+                  {% if m.idjeu ? m.idjeu.idmatches6.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (2)%} a gagné
+                      
+                   {% endif %}
+                   {% if m.idjeu ? m.idjeu.idmatches6.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (2)%} a perdu
+ {% endif %} 
+                       {% if m.idjeu ? m.idjeu.idmatches6.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (1)%} a perdu
+                   {% endif %}                   
+                   
+             {# {{m.idjeu.idmatches.resultat}} #}
+            </td>
+               <br>
+          </tr>
+          
+          
+            <tr>
+            <td>
+              {{ m.idjeu ? m.idjeu.idmatches7.idjoueur1.nom}} 
+                 vs
+                 {{ m.idjeu ? m.idjeu.idmatches7.idjoueur2.nom}} 
+                 
+            </td> 
+            <td>
+            {#  {{m.idutilisateur.nom}} #}
+            </td> 
+            <td>
+              {{m.prix}} 
+            </td>
+             <td>
+                 {% if var is sameas(1) %}
+              {{ m.choix1 }}
+{% endif %}
+     {% if var is sameas(2) %}
+              {{ m.choix2 }}
+{% endif %}
+            </td>
+            <td>
+               {% if m.idjeu ? m.idjeu.idmatches7.resultat is sameas("") %} En Attente
+                   {% endif %}
+                {% if m.idjeu ? m.idjeu.idmatches7.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (1)%}
+                    gagné
+                   {% endif %}
+                  {% if m.idjeu ? m.idjeu.idmatches7.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (2)%} a gagné
+                      
+                   {% endif %}
+                   {% if m.idjeu ? m.idjeu.idmatches7.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (2)%} a perdu
+ {% endif %} 
+                       {% if m.idjeu ? m.idjeu.idmatches7.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (1)%} a perdu
+                   {% endif %}                   
+                   
+             {# {{m.idjeu.idmatches.resultat}} #}
+            </td>
+            <br>
+          </tr>
+          
+            <tr>
+            <td>
+              {{ m.idjeu ? m.idjeu.idmatches8.idjoueur1.nom}} 
+                 vs
+                 {{ m.idjeu ? m.idjeu.idmatches8.idjoueur2.nom}} 
+                 
+            </td> 
+            <td>
+            {#  {{m.idutilisateur.nom}} #}
+            </td> 
+            <td>
+              {{m.prix}} 
+            </td>
+             <td>
+                 {% if var is sameas(1) %}
+              {{ m.choix1 }}
+{% endif %}
+     {% if var is sameas(2) %}
+              {{ m.choix2 }}
+{% endif %}
+            </td>
+            <td>
+               {% if m.idjeu ? m.idjeu.idmatches8.resultat is sameas("") %} En Attente
+                   {% endif %}
+                {% if m.idjeu ? m.idjeu.idmatches8.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (1)%}
+                    gagné
+                   {% endif %}
+                  {% if m.idjeu ? m.idjeu.idmatches8.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (2)%} a gagné
+                      
+                   {% endif %}
+                   {% if m.idjeu ? m.idjeu.idmatches8.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (2)%} a perdu
+ {% endif %} 
+                       {% if m.idjeu ? m.idjeu.idmatches8.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (1)%} a perdu
+                   {% endif %}                   
+                   
+             {# {{m.idjeu.idmatches.resultat}} #}
+            </td>
+               <br><br>
+          </tr>
+          
+            <tr>
+            <td>
+              {{ m.idjeu ? m.idjeu.idmatches9.idjoueur1.nom}} 
+                 vs
+                 {{ m.idjeu ? m.idjeu.idmatches9.idjoueur2.nom}} 
+                 
+            </td> 
+            <td>
+            {#  {{m.idutilisateur.nom}} #}
+            </td> 
+            <td>
+              {{m.prix}} 
+            </td>
+             <td>
+                 {% if var is sameas(1) %}
+              {{ m.choix1 }}
+{% endif %}
+     {% if var is sameas(2) %}
+              {{ m.choix2 }}
+{% endif %}
+            </td>
+            <td>
+               {% if m.idjeu ? m.idjeu.idmatches9.resultat is sameas("") %} En Attente
+                   {% endif %}
+                {% if m.idjeu ? m.idjeu.idmatches9.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (1)%}
+                    gagné
+                   {% endif %}
+                  {% if m.idjeu ? m.idjeu.idmatches9.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (2)%} a gagné
+                      
+                   {% endif %}
+                   {% if m.idjeu ? m.idjeu.idmatches9.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (2)%} a perdu
+ {% endif %} 
+                       {% if m.idjeu ? m.idjeu.idmatches9.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (1)%} a perdu
+                   {% endif %}                   
+                   
+             {# {{m.idjeu.idmatches.resultat}} #}
+            </td>
+               
+          </tr>
+          
+            <tr>
+            <td>
+              {{ m.idjeu ? m.idjeu.idmatches10.idjoueur1.nom}} 
+                 vs
+                 {{ m.idjeu ? m.idjeu.idmatches10.idjoueur2.nom}} 
+                 
+            </td> 
+            <td>
+            {#  {{m.idutilisateur.nom}} #}
+            </td> 
+            <td>
+              {{m.prix}} 
+            </td>
+             <td>
+                 {% if var is sameas(1) %}
+              {{ m.choix1 }}
+{% endif %}
+     {% if var is sameas(2) %}
+              {{ m.choix2 }}
+{% endif %}
+            </td>
+            <td>
+               {% if m.idjeu ? m.idjeu.idmatches10.resultat is sameas("") %} En Attente
+                   {% endif %}
+                {% if m.idjeu ? m.idjeu.idmatches10.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (1)%}
+                    gagné
+                   {% endif %}
+                  {% if m.idjeu ? m.idjeu.idmatches10.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (2)%} a gagné
+                      
+                   {% endif %}
+                   {% if m.idjeu ? m.idjeu.idmatches10.resultat is sameas("1") and var is sameas(1) and m.choix1 is sameas (2)%} a perdu
+ {% endif %} 
+                       {% if m.idjeu ? m.idjeu.idmatches10.resultat is sameas("2") and var is sameas(1) and m.choix1 is sameas (1)%} a perdu
+                   {% endif %}                   
+                   
+             {# {{m.idjeu.idmatches.resultat}} #}
+            </td>
+               <br>
+          </tr>
+               </table>
+          {% endfor %}
+           {# <INPUT type="text" name="prix">#}
+        
+       
+      
+      
+
+            
+            
+            
+           
+
+   
+            
+</form>
+</center> 

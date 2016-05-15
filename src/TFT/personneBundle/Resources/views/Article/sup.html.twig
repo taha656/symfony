@@ -1,0 +1,28 @@
+{# empty Twig template #}
+
+
+{% extends "TFTpersonneBundle:Session:layout.html.twig" %}
+{% block content %}
+
+ <center>
+<h1>Liste des Articles</h1>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Duree</th>
+        <th>Date</th>
+        
+    </tr>
+    
+    {% for article in articles %}
+    <tr>
+        <td>{{article.id}}</td>
+        <td>{{article.sujet}}</td>
+        <td> {{article.date }}   </td>
+        
+        </tr> 
+    {% endfor %} 
+</table>
+    </center>
+{% endblock %}
+     

@@ -1,0 +1,35 @@
+{# empty Twig template #}
+{# empty Twig template #}
+{% extends 'TFTpersonneBundle::adminIndex2.html.twig' %}
+{% block content2 %}
+    <center>
+<form method="POST">
+    <table>
+    <td> nom </td>
+    <td>
+        {{form_widget(f.nom)}}
+    </td>
+    <td>
+     capacite 
+</td>
+     <td>
+        {{form_widget(f.capacite)}}
+    </td>
+        <td>
+     type de terrain 
+</td>
+     <td>
+        {{form_widget(f.typeDeTerrain)}}
+    </td>
+        <td>
+     surface 
+</td>
+     <td>
+        {{form_widget(f.surface)}}
+    </td>
+</table>
+      {{form_rest(f)}}      
+</form>
+
+    </center>
+ {% endblock %}

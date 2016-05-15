@@ -1,0 +1,36 @@
+{% extends 'TFTpersonneBundle::Map.html.twig' %}
+{% block content2 %}<form method="POST">
+    <center>
+       
+
+    <table>
+        <td> nom </td><tr>
+    <td>
+        {{form_widget(f.nom)}}
+    </td></tr>
+    <td>
+     capacite 
+    </td><tr>
+     <td>
+        {{form_widget(f.capacite)}}
+     </td></tr>
+        <td>
+     type de terrain 
+        </td><tr>
+     <td>
+        {{form_widget(f.typeDeTerrain)}}
+     </td></tr>
+        <td>
+     surface 
+        </td><tr>
+     <td>
+        {{form_widget(f.surface)}}
+     </td></tr>
+        <td>
+            {{form_rest(f)}}  </td> 
+</table>
+
+    </center></form>
+    <html> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3190.663552505915!2d10.187543314723618!3d36.89839626986674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2cb7454c6ed51%3A0x683b3ab5565cd357!2sESPRIT!5e0!3m2!1sfr!2sfr!4v1462909423661" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+   {% endblock %} 

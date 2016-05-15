@@ -1,0 +1,25 @@
+
+  <h2> Classement des joueurs </h2> 
+
+
+  <table border="1">
+    <tr>
+        <th>Nom</th>
+     
+        <th>Rang du joueur</th>
+        
+       
+    </tr>
+    {% for modele in modeles %}
+    <tr>
+        <td>{{modele.nom}}</td>
+       
+   
+       <td>{{modele.rangjoueur}}</td>
+        
+        
+    </tr>
+    {% endfor %}
+</table>
+
+

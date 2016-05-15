@@ -1,0 +1,9 @@
+#services:
+#    tf_tpersonne.example:
+#        class: TFT\personneBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
+services:
+    tf_tpersonne.form.registration: 
+        class : TFT\personneBundle\Form\RegistrationType
+        tags : 
+            - { name: form.type, alias : tft_user_registration } 

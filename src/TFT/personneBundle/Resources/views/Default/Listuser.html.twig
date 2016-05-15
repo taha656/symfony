@@ -1,0 +1,32 @@
+{# empty Twig template #}
+  <h2> Liste des utilisateurs : </h2>
+      
+ 
+    
+             {% for j in m %}
+        <fieldset>
+             <legend>Utilisateur : </legend>
+   <table border ="0" >
+           
+        <tr>
+             <td>Nom :    </td>
+            <td>
+        {{j.nom}}
+            </td>
+        </tr>
+        <tr>
+           <td>Email  :   </td>
+
+            <td>
+        {{ j.email }}
+            </td>
+        </tr>
+        <tr>
+   
+         </tr> 
+        
+        </table>
+           
+  </fieldset>
+        {% endfor %}
+   

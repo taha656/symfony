@@ -1,0 +1,25 @@
+{# empty Twig template #}
+
+<center>
+
+<h1>Liste des Articles</h1>
+
+<table border="1">
+    <tr>
+        <th>Sujet</th>
+        <th>Date</th>
+        
+          
+    </tr>
+        </center>
+
+{% for article in articles %}
+    <tr>
+        <td>{{article.sujet}}</td>
+        <td> {{article.date }}   </td>
+     <td><a href="{{path('tft_liste_client2_article',{'id':article.id})}}">Consulter</a></td>
+
+        
+        </tr> 
+    {% endfor %} 
+</table>

@@ -1,0 +1,35 @@
+{# empty Twig template #}
+{% extends 'TFTpersonneBundle::adminIndex.html.twig' %}
+{% block content2 %}
+    <center>
+<form method="POST">
+    nom <input type="text" name="search"/>
+    <input type="submit" value="rech"/>
+</form>
+<table border="1">
+    <tr> <td> nom </td> 
+        <td> Type de Terrain </td>
+        <td> capacité </td>
+        <td> surface </td>
+    </tr>
+    
+     {% for m in mds %}
+         <tr> <td>
+                {{m.nom}}
+            </td>
+            <td>
+              {{m.typeDeTerrain}}  
+            </td>
+            <td>
+                {{m.capacite}}
+            </td>
+             <td>
+                {{m.surface}}
+            </td>
+            </tr>
+         
+      {% endfor %}
+    
+</table>
+    </center>
+      {% endblock %}

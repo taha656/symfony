@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/wamp/www/PhpProject1/vendor/friendsofsymfony/user-bundle/Resources/views/Security/login.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Comment/forum.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Comment/Affichage.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Article/liste.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Comment/rechercherForum.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Article/ajouter.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/vendor/friendsofsymfony/user-bundle/Resources/views/layout.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Image/affiche.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/config/routing.yml</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Article/listeclient.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Pronostic/affichPronostic.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/layout.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Controller/CommentController.php</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Default/fan.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Image/index.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/pronosticUser.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/web/css/style_dir.css</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Comment/Repondre.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Security/login.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Pronostic/resultatPronostic.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Entity/Forum.php</file>
+            <file>file:/C:/wamp/www/PhpProject1/app/config/routing.yml</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Image/List.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Image/upload.html.twig</file>
+            <file>file:/C:/wamp/www/PhpProject1/src/TFT/personneBundle/Resources/views/Default/Inscription.html.twig</file>
+        </group>
+    </open-files>
+</project-private>

@@ -1,0 +1,274 @@
+ajout_admin_match:
+    path: /ajoutmatch
+    defaults: { _controller: TFTpersonneBundle:match:ajoutmatch }
+afficher_user_match:
+    path: /affichermatchuser
+    defaults: { _controller: TFTpersonneBundle:match:afficherMatchuser }
+
+
+afficher_admin_match:
+    path: /affichermatchadmin
+    defaults: { _controller: TFTpersonneBundle:match:afficherMatchadmin }
+
+
+supprimer_match:
+    path: /supprimermatch/{id}
+    defaults: { _controller: TFTpersonneBundle:match:supprimermatch }
+
+rechercher_admin_match:
+    path: /recherchermatch/{nom}
+    defaults: { _controller: TFTpersonneBundle:match:recherchermatch}
+
+
+
+
+
+modifier_match:
+    path: /modifiermatch/{id}
+    defaults: { _controller: TFTpersonneBundle:match:modifiermatch }
+
+
+
+
+
+
+
+
+afficher_admin_resultat:
+    path: /afficherresultatadmin
+    defaults: { _controller: TFTpersonneBundle:Resultat:afficheradminresultat } 
+
+afficher_user_resultat:
+    path: /afficherresultatuser
+    defaults: { _controller: TFTpersonneBundle:Resultat:afficheruserresultat } 
+
+rechercher_admin_resultat:
+    path: /rechercherresultat/{nom}
+    defaults: { _controller: TFTpersonneBundle:Resultat:rechercherresultat}
+    
+    
+tft_resultat_ajouter_homepage:
+    path: /ajouterresultat
+    defaults: { _controller: TFTpersonneBundle:Resultat:ajoutresultat }
+   
+    
+    
+modifier_admin_resultat:
+    path: /modifierresultat/{id}
+    defaults: { _controller: TFTpersonneBundle:Resultat:modifierresultat }
+
+    
+    
+    
+
+
+supprimer_admin_resultat:
+    path: /supprimerresultat/{id}
+    defaults: { _controller: TFTpersonneBundle:Resultat:supprimerresultat }
+
+
+
+
+
+
+
+
+
+
+
+tft_match_affich_homepage:
+    path: /affichermatchuser
+    defaults: { _controller: TFTpersonneBundle:match:affichMatchuser }
+
+tft_match_affecterarbitre_homepage:
+    path: /affecterarbitre
+    defaults: { _controller: TFTpersonneBundle:match:affecterarbitre }  
+
+tft_match_affecterarbitre_homepage:
+    path: /affecterarbitre
+    defaults: { _controller: TFTpersonneBundle:match:affecterarbitre }  
+
+tft_ticket_cancelpaiement_homepage:
+    path: /cancelpaiement
+    defaults: { _controller: TFTpersonneBundle:Ticket:Cancel } 
+tft_ticket_okpaiement_homepage:
+    path: /okpaiement
+    defaults: { _controller: TFTpersonneBundle:Ticket:okpaiement }  
+tft_ticket_paiement_homepage:
+    path: /paiement/{id}
+    defaults: { _controller: TFTpersonneBundle:Ticket:paiement }  
+tf_tpersonne_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: TFTpersonneBundle:Default:index }
+Dopage:
+    path:     /dop
+    defaults: { _controller: TFTpersonneBundle:Default:dop }
+Medecin:
+    path:     /med
+    defaults: { _controller: TFTpersonneBundle:Default:med }
+Arbitre:
+    path:     /arb
+    defaults: { _controller: TFTpersonneBundle:Default:arb }
+Admin:
+    path:     /admin
+    defaults: { _controller: TFTpersonneBundle:Default:adm }
+Joueur:
+    path:     /joueur
+    defaults: { _controller: TFTpersonneBundle:Default:joueur }
+FAN:
+    path:     /fan
+    defaults: { _controller: TFTpersonneBundle:Default:fan }    
+Utilisateur:
+    path:     /user
+    defaults: { _controller: TFTpersonneBundle:Default:user }
+afficherListUser:
+    path:     /Listuser
+    defaults: { _controller: TFTpersonneBundle:Default:listuser} 
+afficherListEncours:
+    path:     /List
+    defaults: { _controller: TFTpersonneBundle:Default:afficheuser}
+Accepter:
+    path:     /TraitAccepter/{id}
+    defaults: { _controller: TFTpersonneBundle:Default:Accepter}
+Refuser:
+    path:     /TraitRefuser
+    defaults: { _controller: TFTpersonneBundle:Default:Refuser}   
+Inscription_all: 
+    path:    /inscri
+    defaults: { _controller: TFTpersonneBundle:Default:admin}
+comment_article:
+    path: /affi
+    defaults: { _controller: TFTpersonneBundle:Comment:Commentaire }
+    
+comment_forum:
+    path: /afficher
+    defaults: { _controller: TFTpersonneBundle:Comment:AjoutForum }
+repondre_forum:
+    path: /rep/{id}
+    defaults: { _controller: TFTpersonneBundle:Comment:repondre }
+ajout_admin_stade:
+    path: /ajoutStade
+    defaults: { _controller: TFTpersonneBundle:Personne:ajoutStade }
+admin_index_homepage:
+    path: /adminIndex
+    defaults: { _controller: TFTpersonneBundle:Personne:adminIndex }
+    
+ajout_admin_pronostic:
+    path: /ajoutPronostic
+    defaults: { _controller: TFTpersonneBundle:Personne:ajoutPronostic }
+affich_pronostic:
+    path: /affichPronostic
+    defaults: { _controller: TFTpersonneBundle:Pronostic:affichPronostic }
+resultatPronostic:
+    path: /resultatPronostic
+    defaults: { _controller: TFTpersonneBundle:Pronostic:resultatPronostic }      
+recherchePronostic:
+    path: /recherchePronostic
+    defaults: { _controller: TFTpersonneBundle:Pronostic:recherchePronostic }
+affich_admin_stade:
+    path: /affichStade
+    defaults: { _controller: TFTpersonneBundle:Personne:affichStade }   
+supprimer_admin_stade:
+    path: /supprimer/{id}
+    defaults: { _controller: TFTpersonneBundle:Personne:supprimerStade }
+    
+modifier_admin_stade:
+    path: /modifier/{id}
+    defaults: { _controller: TFTpersonneBundle:Personne:modifierStade }
+    
+rechercher_admin_stade:
+    path: /rechercher/{nom}
+    defaults: { _controller: TFTpersonneBundle:Personne:rechercherStade }
+    
+exporter_admin_stade:
+    path: /exporter
+    defaults: { _controller: TFTpersonneBundle:Personne:exporterStade }
+    
+rediriger_admin_stade:
+    path: /rediriger
+    defaults: { _controller: TFTpersonneBundle:Personne:redirigerStade }
+    
+    
+rechercherForum_forum:
+    path: /rechercherForum/{id}
+    defaults: { _controller: TFTpersonneBundle:Comment:rechercherForum }
+AdminForum:
+    path: /Adminad
+    defaults: { _controller: TFTpersonneBundle:Comment:Adminforum }
+_afficherclassement:
+    path: /classement
+    defaults: { _controller: TFTpersonneBundle:Classement:affichageClassement}
+_grapheChartLine:
+    path: /chartLine
+    defaults: { _controller: TFTpersonneBundle:Graphe:chartLine }
+    
+ajoutjeu_match:
+    path: /ajoutJeu
+    defaults: { _controller: TFTpersonneBundle:Pronostic:ajoutJeuDQL }    
+admin_index_homepage:
+    path: /adminIndex
+    defaults: { _controller: TFTpersonneBundle:Personne:adminIndex }  
+tft_personne_aff:
+    path: /affses
+    defaults: { _controller: TFTpersonneBundle:Personne:liste }
+tft_personne_templ:
+    path: /vue 
+    defaults: { _controller: TFTpersonneBundle:Personne:vue }
+tft_personne_ajout:
+    path: /ajout
+    defaults: { _controller: TFTpersonneBundle:Personne:ajout } 
+    
+tft_personne_listsup:
+    path: /listsup
+    defaults: { _controller: TFTpersonneBundle:Personne:listsup } 
+        
+tft_personne_sup:
+    path: /sup/{id}
+    defaults: { _controller: TFTpersonneBundle:Personne:supprimer } 
+    
+tft_personne_listup:
+    path: /listup
+    defaults: { _controller: TFTpersonneBundle:Personne:listup } 
+  
+tft_personne_upd:
+    path: /mod/{id}
+    defaults: { _controller: TFTpersonneBundle:Personne:modifier }
+tft_ajout_article:
+    path: /ajt
+    defaults: { _controller: TFTpersonneBundle:Article:ajout }
+
+tft_aff_article:
+    path: /afff
+    defaults: { _controller: TFTpersonneBundle:Article:liste}
+
+tft_sup_article:
+    path: /supar/{id}
+    defaults: { _controller: TFTpersonneBundle:Article:supprimer}
+
+tft_listsup_article:
+    path: /lasup
+    defaults: { _controller: TFTpersonneBundle:Article:listsup}
+
+tft_mod_article:
+    path: /modar/{id}
+    defaults: { _controller: TFTpersonneBundle:Article:modifier}
+
+tft_listup_article:
+    path: /laup
+    defaults: { _controller: TFTpersonneBundle:Article:listup}
+tft_ajout_image:
+    path: /ajtimg
+    defaults: { _controller: TFTpersonneBundle:Image:upload }
+    
+tft_liste_image:
+    path: /liste
+    defaults: { _controller: TFTpersonneBundle:Image:list }
+
+tft_aff_image:
+    path: /aff/{id}
+    defaults: { _controller: TFTpersonneBundle:Image:affiche }
+    
+tft_image_route:
+    path: /image/{id}
+    defaults: { _controller: TFTpersonneBundle:Image:photo }  
+    

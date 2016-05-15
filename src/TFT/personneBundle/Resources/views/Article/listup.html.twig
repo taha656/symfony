@@ -1,0 +1,35 @@
+{# empty Twig template #}
+
+
+
+
+{% extends "TFTpersonneBundle:Session:layout.html.twig" %}
+{% block content %}
+<center>
+
+<h1>Liste des Articles</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Sujet</th>
+        <th>Date</th>
+        
+          
+    </tr>
+        </center>
+
+
+{% for article in articles %}
+    <tr>
+        <td>{{article.id}}</td>
+        <td>{{article.sujet}}</td>
+        <td> {{article.date }}   </td>
+        
+        
+                <td><a href="{{path('tft_mod_article',{'id':article.id})}}">Modifier</a></td>
+
+        </tr>
+        {% endfor %} 
+</table>
+{% endblock %}

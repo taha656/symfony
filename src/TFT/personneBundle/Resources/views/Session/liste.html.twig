@@ -1,0 +1,49 @@
+{# empty Twig template #}
+{# empty Twig template #}
+
+
+{% extends "TFTpersonneBundle:Session:layout.html.twig" %}
+{% block content %}
+    <center>
+        
+<h1>Liste des sessions</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>NomArbitre</th>
+        <th>Duree</th>
+        <th>Date_debut</th>
+        <th>Date_fin</th>
+        <th>Type</th>
+        <th>Lieu</th>
+          
+    </tr>
+    </center>
+     
+    
+    {% for session in sessions %}
+    <tr>
+        <td>{{session.id}}</td>
+         <td>{{session.nomarbitre}}</td>
+        <td>{{session.duree}}</td>
+        <td> {{session.dateDebut}}   </td>
+        <td> {{session.dateFin}}   </td>
+        <td>{{session.type}}</td>
+        <td>{{session.lieu}}</td>
+
+        
+
+        
+        
+        
+
+        
+
+        
+        
+        
+   </tr> 
+    {% endfor %} 
+</table>
+{% endblock %}

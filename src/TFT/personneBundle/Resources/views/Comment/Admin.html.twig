@@ -1,0 +1,24 @@
+
+{% extends 'TFTpersonneBundle::adminIndex.html.twig' %}
+{% block content3 %}
+
+  <table border="1">
+    <tr>
+        <th>Titre</th>
+     
+        <th>Descriptionr</th>
+        
+       
+    </tr>
+    {% for modele in modeles %}
+    <tr>
+        <td>{{modele.titreDuForum}}</td>
+       
+   
+       <td>{{modele.description}}</td>
+        
+        
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}

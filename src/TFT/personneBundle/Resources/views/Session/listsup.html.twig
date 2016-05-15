@@ -1,0 +1,44 @@
+{# empty Twig template #}
+{# empty Twig template #}
+{# empty Twig template #}
+{# empty Twig template #}
+
+
+{% extends "TFTpersonneBundle:Session:layout.html.twig" %}
+{% block content %}
+    <center>
+<h1>Liste des sessions</h1>
+<table border="1">
+    <tr>
+        <th>Nom arbitre</th>
+        <th>ID</th>
+        <th>Duree</th>
+        <th>Date_debut</th>
+        <th>Date_fin</th>
+        <th>Type</th>
+          
+    </tr>
+    </center>
+     
+    
+    {% for session in sessions %}
+    <tr>
+        <td>{{session.idutilisateur.nom}}</td> 
+
+        <td>{{session.id}}</td>
+
+        <td>{{session.duree}}</td>
+        <td> {{  session.dateDebut|date('d/m/y') }}   </td>
+        <td>  {{session.dateFin|date('d/m/Y')}}   </td>
+        <td>{{session.type}}</td>
+
+        
+
+        <td><a href="{{path('tft_personne_sup',{'id':session.id})}}">Supprimer</a></td>
+        
+        
+        
+   </tr> 
+    {% endfor %} 
+</table>
+{% endblock %}

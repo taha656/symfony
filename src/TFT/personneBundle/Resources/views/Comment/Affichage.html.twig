@@ -1,0 +1,37 @@
+<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" />
+<link href=""{{asset('css/fonts/font-awesome-4.1.0/css/font-awesome.min.css')}}" rel="stylesheet" type="text/css" />
+
+<link href="{{asset('css/component.css')}}" rel="stylesheet" type="text/css" />
+
+<link href="{{asset('css/style_dir.css" rel="stylesheet')}}" type="text/css" />
+<link href="{{asset('css/responsive.css')}}" rel="stylesheet" type="text/css" />
+<link href="{{asset('css/costum.css')}}" rel="stylesheet" type="text/css" />
+    <center>     
+<h1>Liste des Forums </h1>
+
+<form method="POST">
+    titre <input type="text" name="search"/>
+    <input type="submit" value="rech"/>
+</form>
+<div class="col-sm-offset-4 col-sm-4">
+    <br>
+{% for m in modeles %}
+        <center>
+
+    <table border ="0" >
+
+        
+ <li class="list-group-item text-right"><span class="pull-left"><strong class="">Titre </strong></span> <span class="">{{ m.titreduforum }}</span></li>
+ <li class="list-group-item text-right"><span class="pull-left"><strong class="">Description</strong></span> <span class="">{{ m.Description }}</span></li>       
+   <a class ="btn btn-success" href="{{path("repondre_forum",{'id':m.id})}}">participer a ce forum</a>
+ 
+ <br>
+ <br>
+{% endfor %}
+</div>
+
+</table>
+</center>
+</fieldset>
+</center>
+     

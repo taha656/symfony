@@ -1,0 +1,52 @@
+{# empty Twig template #}
+{#{% extends 'TFTpersonneBundle::adminIndex.html.twig' %}
+{% block content2 %}#}
+   
+  <table border="2">
+    <tr>
+        <td>
+           ID 
+        </td>
+        <td>
+           nom 
+        </td>
+         <td>
+           capacite 
+        </td>
+         <td>
+           typeDeTerrain 
+        </td>
+         <td>
+           surface 
+        </td>
+   
+    </tr>  
+    {% for m in mds%}
+        <tr>
+            <td>
+               {{m.id}} 
+            </td> 
+            <td>
+               {{m.nom}}  
+            </td>
+            <td>
+               {{m.capacite}}  
+            </td>
+            <td>
+               {{m.typeDeTerrain}}  
+            </td>
+            <td>
+               {{m.surface}}  
+            </td>
+         
+            
+        </tr>
+       {% endfor %}
+       <a href="{{path('exporter_admin_stade')}}"
+                  >export</a>
+        
+</table>
+
+
+
+ {# {% endblock %} #}
